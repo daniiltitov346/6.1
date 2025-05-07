@@ -128,6 +128,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="6.1б.cpp" />
+    <ClCompile Include="car.cpp" />
+    <ClCompile Include="cyclist.cpp" />
+    <ClCompile Include="detected_object.cpp" />
+    <ClCompile Include="motorcycle.cpp" />
+    <ClCompile Include="person.cpp" />
+    <ClCompile Include="unattended_bag.cpp" />
+    <ClCompile Include="vehicle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="car.h" />
+    <ClInclude Include="cyclist.h" />
+    <ClInclude Include="detected_object.h" />
+    <ClInclude Include="motorcycle.h" />
+    <ClInclude Include="person.h" />
+    <ClInclude Include="unattended_bag.h" />
+    <ClInclude Include="vehicle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
