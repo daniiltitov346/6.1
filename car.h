@@ -13,4 +13,7 @@ public:
     void setIsTaxi(bool taxi);
 
     void Print(std::ostream& os) const override;
+    Car* clone() const override {
+        return new Car(*this);
+    }
 };

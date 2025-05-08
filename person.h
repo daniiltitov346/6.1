@@ -12,6 +12,9 @@ protected:
     TernaryStatus has_beard;
 
 public:
+    Person* clone() const override {
+        return new Person(*this); // Использует конструктор копирования
+    }
     Person(int xmin, int ymin, int xmax, int ymax,
         Gender g = Gender::UNDEFINED,
         TernaryStatus child = TernaryStatus::UNKNOWN,

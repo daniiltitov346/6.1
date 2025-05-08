@@ -8,6 +8,7 @@ protected:
 
 public:
     DetectedObject(int xmin, int ymin, int xmax, int ymax);
+    virtual DetectedObject* clone() const = 0;
     virtual ~DetectedObject();
 
     int getXmin() const;

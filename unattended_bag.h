@@ -7,7 +7,9 @@ private:
 
 public:
     UnattendedBag(int xmin, int ymin, int xmax, int ymax, unsigned int time = 0);
-
+    UnattendedBag* clone() const override {
+        return new UnattendedBag(*this);
+    }
     unsigned int getFirstSeenTime() const;
     void setFirstSeenTime(unsigned int time);
 
